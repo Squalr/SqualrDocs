@@ -1,3 +1,5 @@
+## Squalr
+
 Welcome to **Squalr** - the open-source, performant, modern game cheating tool written in C#.
 
 This wiki is the main source of documentation for two groups: **developers** contributing to the Squalr project, and **cheat developers** working with Squalr to create cheats.
