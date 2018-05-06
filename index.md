@@ -14,4 +14,4 @@ This wiki is the main source of documentation for two groups: **developers** con
 
 ## Questions or need help?
 
-Check out our [[Contact]] page for different ways of getting in touch.
+Check out our [contact](Contact) page for different ways of getting in touch.
