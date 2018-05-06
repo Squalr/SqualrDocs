@@ -1,0 +1,21 @@
+## Overview
+
+Coming to Squalr from Cheat Engine? Watch the [Cheat Engine to Squalr Guide Video](https://www.youtube.com/watch?v=lr6b2njGv9I) to get a sense for the differences.
+
+## New Scan
+
+This button is located in the Scan Results panel.
+
+## Unknown Initial Value Scans
+
+Unknown inital value scans do not exist the same way they do in Cheat Engine. This was replaced with the "Collect Values" scan. This button is located in the Scan Results panel, and on the top toolbar.
+
+This is mostly the same as Unknown initial value, with some slight differences. Collect values can be done at ANY point in the can, not just initially. This is useful if you forget what the previous scan was.
+
+Ex (Cheat Engine): Oh no, did the value increase or decrease? I forgot. I'll have to start my scan over from scratch.
+
+Ex (Squalr): I forgot if the value increased or decreased. I'll do a collect value scan, and start from there.
+
+## To Be Continued...
+
+A more detailed description of differences to come
