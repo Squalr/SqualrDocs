@@ -6,7 +6,7 @@ A useful pre-reading is the paper "SigPath: A Memory Graph Based Approach for Pr
 
 ## Problem Definition
 
-Let's define a candidate pointer as an address with a value that appears to be a pointer to another address contained in the heap, within +/- a tolerance (generally < 4kb).
+Let's define a candidate pointer as an address with a value that appears to be a pointer to another address contained in the heap, within +/- a tolerance (generally < 4kb). Note that the tolerance does not apply if the raw pointer falls outside of the heap.
 
 Let L represent the maximum pointer scan depth, and L_i represent the current depth
 
@@ -33,4 +33,4 @@ A better approach is the **Back-Trace Retrace** algorithm, which starts from D a
 
 The first phase of the algorithm is to construct {H}, {S}, and D. This simply means creating a snapshot of all memory, and pulling out all candidate pointers in the sets. D should be discovered through a typical memory scanning flow.
 
-
+The process for validating a candidate pointer is simply to take the value at every address, and determine if it is contained by any of the heaps. This should be done via a binary search O(log(n)) or another fast look-up algorithm. TODO: Consider [https://en.wikipedia.org/wiki/Y-fast_trie](Y-Fast Trie) O(log(log(n))).
