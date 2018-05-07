@@ -2,6 +2,8 @@
 
 Many games are written in a high level compiled language, the most common being C/C++. When the game is compiled, the variables end up in one of three locations: the heap, the stack, or in static memory. Pointer scans are a method of locating variables reliably in the heap, and sometimes the stack.
 
+This document will cover the problem that pointer scans solve from a high level view. For an overview of the algorithm behind pointer scanning, see [Pointer Scanning Algorithm](Technical/Scanners/PointerScanAlgorithm).
+
 To view the stacks, heaps, and static memory of a running process, check out the tool [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) by Microsoft (no, this is not the Task Manager that comes with Windows). This is a great way to visualize how memory is laid out in a game.
 
 Note: Pointer scans are not a solution for games based on the CLR, JVM, or another interpreter. Different technology specific solutions are used for these that take advantage of the particular interpreter.
